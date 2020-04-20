@@ -430,8 +430,8 @@
           return results == null ? null : results[1];
         }
         
-        var rgupx = decodeURIComponent(gup("q", window.location.href));
-        var text = rgupx || 'Como usar direito esse site';
+        var rgupx = atob(decodeURIComponent(gup("q", window.location.href)));
+        var text = rgupx
         
         var ta = document.getElementById("lst-ib");
         function type(string,element){
