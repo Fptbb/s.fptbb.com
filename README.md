@@ -1,3 +1,3 @@
 # fptbb.github.io
 
-Transferido para [Esse link](https://fp.robr.page/)
+Transferido para [Esse link](https://s.fptbb.com/)
