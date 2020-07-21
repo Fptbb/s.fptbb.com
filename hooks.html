@@ -34,7 +34,7 @@
                     hooks = JSON.parse(hooks);
                     hooks.forEach(hook => {
                         const hook1 = new Discord.WebhookClient(hook.id, hook.token);
-                        hook1.send(`${hook.content != null ? hook.content : ''}${json.content}` || '', options).then(console.log('Sucesso')).catch(console.error);
+                        hook1.send(`${hook.content != null ? hook.content : ''}${json.content != undefined ? json.content : ''}` || '', options).then(console.log('Sucesso')).catch(console.error);
                     });
                 } 
             }else{
